@@ -1,0 +1,1 @@
+var ngApp = angular.module('ngApp', ['ngRoute', 'ngResource']);

@@ -1,0 +1,19 @@
+<li class="left clearfix">
+    <span class="chat-img pull-left">
+        <img src="http://placehold.it/50/55C1E7/fff&text={{post.username.substring(0,1).toUpperCase()}}" alt="User Avatar" class="img-circle" />
+    </span>
+    <div class="chat-body clearfix">
+        <div class="header">
+            <strong class="primary-font">{{post.username}}
+                <a href="" data-toggle="modal" data-target="#editPost" ng-click="postEdit(post._id)">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+            </strong>
+            <small class="pull-right text-muted">
+                <span class="glyphicon glyphicon-time"></span>{{post.timestamp}}</small>
+        </div>
+        <p>
+            {{post.text}}
+        </p>
+    </div>
+</li>
