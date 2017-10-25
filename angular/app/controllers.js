@@ -1,6 +1,13 @@
 /** homeController */
 ngApp.controller('homeController', ['$scope', '$location', 'userService',
     function ($scope, $location, userService) {
+
+        this.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+          ];
+
         $scope.username = userService.username || 'robert.flanagan';
         $scope.invalid = false;
         $scope.$watch('username', function () { // shared service
